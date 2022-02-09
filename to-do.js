@@ -22,5 +22,11 @@ document.getElementById('add-item').addEventListener('click',function(){
                 e.target.parentNode.parentNode.style.display = "none";
             })
         }
+        //for done
+        for(const button of doneButton){
+            button.addEventListener('click',function(e){
+                e.target.parentNode.parentNode.style.textDecoration = "line-through";
+            })
+        }
     }
 })
